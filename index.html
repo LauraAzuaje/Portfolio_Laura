@@ -114,13 +114,13 @@
       </div>
     </section>
     <!---contact section-->
-    <form class="contact" action="enviar.php" method="post">
+    <form id="form" class="contact" action="">
       <h1 class="titleC">Contactame</h1>
-      <input type="text" name="nombre" placeholder="Nommbre y Apellido" required>
-      <input type="text" name="correo" placeholder="Correo" required>
-      <input type="text" name="telefono" placeholder="Teléfono" required>
-      <textarea name="mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
-      <input type="submit" value="ENVIAR" id="button">
+      <input for="name" id="name" type="text" name="nombre" placeholder="Nommbre y Apellido" required>
+      <input for="email" id="email" type="text" name="correo" placeholder="Correo" required>
+      <textarea for="message" name="mensaje" placeholder="Escriba aquí su mensaje" required></textarea>
+      <input type="submit" value="ENVIAR" id="button" class="btnSubmit">
+      <a href="mailto:azuajemarcanolaura@gmail.com" id="emailSubmit">mail</a>
     </form>
     <footer>
       <span>Created By Laura Azuaje</span>
