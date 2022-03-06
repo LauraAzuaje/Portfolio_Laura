@@ -28,7 +28,7 @@
 
 .navbar.sticky {
   padding: 15px 0;
-  background: #5f2137;
+  background: #5E4868;
 }
 
 .navbar .max-width {
@@ -51,7 +51,7 @@
 }
 
 .navbar .menu li a:hover {
-  color: #6d6d6d;
+  color: #5E4868;
 }
 
 .navbar.sticky .menu li a:hover {
@@ -69,7 +69,7 @@
 /*home style*/
 .home {
   display: flex;
-  background: url("img/prueba.png") no-repeat center;
+  background: url("img/bg.png") no-repeat center;
   height: 100vh;
   color: #fff;
   min-height: 500px;
@@ -100,13 +100,13 @@
 }
 
 .home .home-content .text3 span {
-  color: #5f2137;
+  color: #5E4868;
   font-weight: 500;
 }
 
 .home .home-content a {
   display: inline-block;
-  background: #5f2137;
+  background: #5E4868;
   color: #fff;
   font-size: 20px;
   padding: 6px 12px;
@@ -171,7 +171,7 @@ section {
   height: 400px;
   width: 400px;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 1000px;
 }
 .about .about-content .right {
   width: 55%;
@@ -202,118 +202,12 @@ section {
   border: 1px solid #5f2137;
 }
 
-/* skills style */
-.skills {
-  display: flex;
-  background: url("img/skills.png") no-repeat center;
-  height: 100vh;
-  color: #fff;
-  min-height: 500px;
-}
-.skills .title {
-  position: relative;
-  text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
-  font-family: "Julius Sans One", sans-serif;
-}
-.skills .colum {
-  font-family: "Antonio", sans-serif;
-}
-.skills .skills-content {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-.skills .skills-content .left {
-  width: calc(50% - 30px);
-}
-.skills .skills-content .left .info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
 
-.skills .skills-content .left span {
-  font-weight: 500;
-  font-size: 18px;
-}
-.skills .skills-content .left .line {
-  height: 5px;
-  width: 100%;
-  background: #6d6d6d;
-  position: relative;
-}
-.skills .skills-content .left .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 80%;
-  left: 0;
-  top: 0;
-  background: #5f2137;
-}
-/*skills left*/
-.skills .skills-content .left .html::before {
-  width: 20%;
-}
-.skills .skills-content .left .css::before {
-  width: 20%;
-}
-.skills .skills-content .left .javas::before {
-  width: 5%;
-}
-.skills .skills-content .left .python::before {
-  width: 0;
-}
-
-/*skills right*/
-.skills .skills-content .right {
-  width: calc(50% - 30px);
-}
-.skills .skills-content .right .info {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-  margin-top: 20px;
-}
-
-.skills .skills-content .right span {
-  font-weight: 500;
-  font-size: 18px;
-}
-.skills .skills-content .right .line {
-  height: 5px;
-  width: 100%;
-  background: #6d6d6d;
-  position: relative;
-}
-.skills .skills-content .right .line::before {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 80%;
-  left: 0;
-  top: 0;
-  background: #5f2137;
-}
-.skills .skills-content .right .comun::before {
-  width: 80%;
-}
-.skills .skills-content .right .team::before {
-  width: 80%;
-}
-.skills .skills-content .right .adap::before {
-  width: 60%;
-}
-.skills .skills-content .right .crea::before {
-  width: 60;
-}
 
 /*projects style*/
+.projects{
+  background: url("img/bg.png") no-repeat center;
+}
 .projects .title {
   position: relative;
   text-align: center;
@@ -357,41 +251,48 @@ section {
 }
 
 /*contact style*/
-.contact {
-  display: flex;
-  background: url("img/contact.png") no-repeat center;
-  height: 100vh;
-  color: #fff;
-  min-height: 500px;
+form{
+  width: 450px;
+  margin: auto;
+  background: linear-gradient(180deg, #5E4868 0%, rgba(204, 163, 223, 0) 100%);
+  padding: 10px 20px;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
 }
 
-.contact .title {
-  position: relative;
+.titleC{
+  color: #fff;
   text-align: center;
-  font-size: 40px;
-  font-weight: 500;
-  margin-bottom: 60px;
-  padding-bottom: 20px;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
   font-family: "Julius Sans One", sans-serif;
 }
-.contact .contact-content {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: 30px;
-  align-items: center;
-  justify-content: space-between;
-  font-family: "Antonio", sans-serif;
+
+input, textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: none;
 }
-.contact .contact-content .colum {
-  width: calc(50% - 30px);
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
 }
-.contact .contact-content .text {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 10px;
+
+.contact #button {
+  background: #5E4868;
+  color: #fff;
+  padding: 20px;
 }
-.contact .contact-content .left p {
-  text-align: justify;
+
+.contact #button:hover {
+  cursor: pointer;
 }
 
 /*responsive*/
@@ -478,5 +379,10 @@ section {
   }
   .about .about-content .right {
     flex: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  form {
+    width: 90%;
   }
 }
