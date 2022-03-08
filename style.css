@@ -83,6 +83,10 @@
   margin: auto 0 auto 10px;
 }
 
+.home-content{
+margin: -400px;
+}
+
 .home .home-content .text {
   font-size: 30px;
   margin: 5px 0;
