@@ -218,6 +218,8 @@ section {
   font-family: "Julius Sans One", sans-serif;
 }
 .projects .projects-content .card {
+  display: flex;
+  justify-content: center;
   align-items: center;
   width: calc(33% - 20px);
   color: #000;
@@ -240,8 +242,9 @@ section {
   transform: scale(1.05);
 }
 .projects .projects-content .img {
-  width: 300px;
-  height: 200px;
+  width: 200px;
+  height: 150px;
+  align-items: center;
   justify-content: center;
   border-radius: 6px;
 }
@@ -290,21 +293,6 @@ textarea {
 .contact #button:hover {
   cursor: pointer;
 }
-
-.Footer{
-  margin-top: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: "Julius Sans One", sans-serif;
-  color: #5E4868;
-}
-
-.iconF{
-  display: flex;
-  font-size: 25px;
-}
-
 
 /*responsive*/
 @media (max-width: 1090px) {
