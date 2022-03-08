@@ -21,14 +21,15 @@ $(document).ready(function(){
 });
 
 //Form submit
-const $form = document.querySelector('#form')
+const form = document.querySelector('#form')
 const $buttonMailto = document.querySelector('#emailSubmit')
 
-$form.addEventListener('submit', handleSubmit)
+form.addEventListener('submit', handleSubmit)
 
 function handleSubmit(event) {
   event.preventDefault()
-  const form = new FormData(this)
-  $buttonMailto.setAttribute('href', `mailto:azuajemarcanolaura@gmail.com?subject= nombre ${form.get('name')}  correo ${form.get('email')}&body= ${form.get('message')}`)
+  const formInfo = new FormData(this)
+  $buttonMailto.setAttribute('href', `mailto:azuajemarcanolaura@gmail.com?subject= name ${formInfo.get('name')} email ${formInfo.get('email')}&body= ${formInfo.get('message')}`)
   $buttonMailto.click()
+  form.reset()
 }
