@@ -218,8 +218,6 @@ section {
   font-family: "Julius Sans One", sans-serif;
 }
 .projects .projects-content .card {
-  display: flex;
-  justify-content: center;
   align-items: center;
   width: calc(33% - 20px);
   color: #000;
@@ -244,7 +242,6 @@ section {
 .projects .projects-content .img {
   width: 300px;
   height: 200px;
-  align-items: center;
   justify-content: center;
   border-radius: 6px;
 }
